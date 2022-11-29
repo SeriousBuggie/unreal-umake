@@ -78,7 +78,7 @@ object FormMain: TFormMain
     ActivePage = TabSheetError
     Anchors = [akLeft, akTop, akRight, akBottom]
     Enabled = False
-    TabOrder = 5
+    TabOrder = 6
     object TabSheetError: TTabSheet
       Caption = 'Error'
       OnResize = TabSheetErrorResize
@@ -248,5 +248,14 @@ object FormMain: TFormMain
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 0
+  end
+  object ButtonRebuild: TButton
+    Left = 120
+    Top = 53
+    Width = 57
+    Height = 25
+    Caption = '&Rebuild'
+    TabOrder = 5
+    OnClick = FormShow
   end
 end

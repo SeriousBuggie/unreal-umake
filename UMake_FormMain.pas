@@ -62,6 +62,7 @@ type
     TabSheetError: TTabSheet;
     TabSheetMessages: TTabSheet;
     TabSheetWarnings: TTabSheet;
+    ButtonRebuild: TButton;
 
     procedure FormShow(Sender: TObject);
     procedure ButtonAbortClick(Sender: TObject);
