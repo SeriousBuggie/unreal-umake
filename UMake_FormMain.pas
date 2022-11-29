@@ -615,6 +615,10 @@ begin
   RegExprWarningCompile.Expression := '^([A-Za-z]:\\.*?\\Classes\\\w+\.uc)\s*\((\d+)\)\s*:\s*ExecWarning,\s*(.*)';
   RegExprWarningParse  .Expression := '^Failed loading\s+.*';
 
+  PageControlDetails.ActivePage := TabSheetMessages;
+  TabSheetError   .TabVisible := False;
+  TabSheetWarnings.TabVisible := False;
+
   InfoError := TInfoError.Create;
   ListInfoWarning := TList.Create;
 
