@@ -1,6 +1,7 @@
 ^Bad class definition	If you're coding for UT2003 or another game using the same or a newer engine, keep in mind that the deprecated "expands" keyword isn't supported anymore; use "extends" instead.
 ^Superclass (\S+) of class \S+ not found	The compiler wasn't able to find the specified superclass $1 of your class.\nIf it's not a typo, make sure the package containing the superclass is listed in your project's dependencies.
 ^Unexpected end of file at end of Class	The most common cause for this error is a missing closing brace "}" or a superfluous opening brace "{" somewhere.
+^Unexpected end of Else in \w+ block	When using loops (while, do, for, foreach) as the Else code of an If statement, the entire Else block must be enclosed in braces.
 ^Unexpected	The most common cause for this error is a missing opening brace "{" or a superfluous closing brace "}" somewhere.
 ^Call to (\w+)	One of the parameters in your function call to $1 doesn't have the right type.\nLook up the original declaration of the function and double-check it against the types of values you're actually using.
 ^Can't find (\w+)	The compiler was unable to find a $1 object you referenced in your code.\nIf the references package is a code package, add it to your project's dependencies; if it's another kind of package, consider loading it at the top of your UnrealScript source file using the following line:\n#exec obj load file=..\\(subdir)\\(packagefile)
@@ -38,3 +39,7 @@
 ^Failed factoring	The compiler wasn't able to import the object from the file you specified.\nCheck for typos, and keep in mind that your project directory is the base directory for file specifications here.
 ^Texture dimensions are not powers of two	The compiler can only import textures whose pixel dimensions are powers of two (like 2, 4, 8, 16, and so on).
 ^Can't find file	The compiler wasn't able to find the specified file for import.\nCheck for typos, and keep in mind that your project directory is the base directory for file specifications here.
+^Class names shouldn't end in a digit	Class names ending in a digit might result in misleading actor names in UnrealEd.
+^(\w+) : unreferenced local variable	The compiler found that the local variable "$1" is declared but never used in the containing function.\nYou might as well remove it if you don't need it.
+^(\w+) obscures (\w+) defined in base class (\w+)	The variable, struct or enum "$1" you declared hides a variable, struct or enum of the same name which was declared in the class $3 already.\nThe obscured base class member can no longer be accessed from within the scope of the newly declared member. You might be accidently accessing the new member instead of the obscured one.
+^(\w+): Missing return value	According to its declaration, the function $1 returns a value, but its code doesn't contain any Return statement.\nThe function will return a null value (empty string, 0, None, false, etc.) if you don't add a Return statement.
