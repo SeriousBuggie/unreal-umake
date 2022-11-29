@@ -590,9 +590,9 @@ object FormOptions: TFormOptions
       object LabelAboutUMakeVersion: TLabel
         Left = 50
         Top = 16
-        Width = 54
+        Width = 64
         Height = 13
-        Caption = 'Version 1.1'
+        Caption = 'Version 1.2.2'
       end
       object LabelAboutHashes: TLabel
         Left = 24
