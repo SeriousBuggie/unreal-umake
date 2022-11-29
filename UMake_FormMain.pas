@@ -592,6 +592,10 @@ begin
     end;
   end;
 
+  ButtonAbort.Caption := '&Abort';
+  ButtonAbort.Enabled := False;
+  ButtonAbort.Cancel  := False;
+
   RichEditMessages.Paragraph.FirstIndent := 2;
   RichEditMessages.Paragraph.LeftIndent  := 6;
 
@@ -861,7 +865,7 @@ begin
       end;
     end;
 
-    ButtonAbort.Caption := 'Close';
+    ButtonAbort.Caption := '&Close';
     ButtonAbort.Enabled := True;
     ButtonAbort.Cancel  := True;
   end;
