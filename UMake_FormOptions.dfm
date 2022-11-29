@@ -12,11 +12,14 @@ object FormOptions: TFormOptions
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   OnActivate = FormActivate
   OnClose = FormClose
   OnCloseQuery = FormCloseQuery
   OnShow = FormShow
+  DesignSize = (
+    441
+    297)
   PixelsPerInch = 96
   TextHeight = 13
   object PageControl: TPageControl
@@ -30,6 +33,9 @@ object FormOptions: TFormOptions
     OnChange = PageControlChange
     object TabSheetProject: TTabSheet
       Caption = 'Project'
+      DesignSize = (
+        426
+        234)
       object LabelProjectExplanation: TLabel
         Left = 8
         Top = 16
@@ -96,7 +102,7 @@ object FormOptions: TFormOptions
         TabOrder = 2
         OnClick = ButtonDependencyUpClick
         Glyph.Data = {
-          A2040000424DA20400000000000036040000280000000B000000090000000100
+          AA000000424DA20400000000000036040000280000000B000000090000000100
           0800000000006C000000120B0000120B00000200000002000000FFFFFF000000
           0000000000010101010100000000000000010000000100000000000000010000
           0001000000000101010100000001010101000001000000000000000100000000
@@ -112,7 +118,7 @@ object FormOptions: TFormOptions
         TabOrder = 3
         OnClick = ButtonDependencyDownClick
         Glyph.Data = {
-          A2040000424DA20400000000000036040000280000000B000000090000000100
+          AA000000424DA20400000000000036040000280000000B000000090000000100
           0800000000006C000000120B0000120B00000200000002000000FFFFFF000000
           0000000000000001000000000000000000000100010000000000000000010000
           0001000000000000010000000000010000000001000000000000000100000101
@@ -160,6 +166,9 @@ object FormOptions: TFormOptions
     object TabSheetGeneral: TTabSheet
       Caption = 'General'
       ImageIndex = 1
+      DesignSize = (
+        426
+        234)
       object LabelEditor: TLabel
         Left = 9
         Top = 16
@@ -417,6 +426,9 @@ object FormOptions: TFormOptions
     object TabSheetShortcuts: TTabSheet
       Caption = 'Shortcuts'
       ImageIndex = 3
+      DesignSize = (
+        426
+        234)
       object LabelShortcutDesktop: TLabel
         Left = 8
         Top = 16
@@ -511,6 +523,9 @@ object FormOptions: TFormOptions
     object TabSheetAbout: TTabSheet
       Caption = 'About'
       ImageIndex = 2
+      DesignSize = (
+        426
+        234)
       object LabelAboutUMake: TLabel
         Left = 8
         Top = 16
@@ -529,7 +544,7 @@ object FormOptions: TFormOptions
         Top = 44
         Width = 154
         Height = 13
-        Caption = 'Copyright © 2002 by Mychaeel,'
+        Caption = 'Copyright '#169' 2002 by Mychaeel,'
       end
       object LabelAboutRegexp: TLabel
         Left = 24
@@ -543,7 +558,7 @@ object FormOptions: TFormOptions
         Top = 127
         Width = 195
         Height = 13
-        Caption = 'Copyright © 2001 by Andrey V. Sorokin,'
+        Caption = 'Copyright '#169' 2001 by Andrey V. Sorokin,'
       end
       object BevelAboutUMake: TBevel
         Left = 109
@@ -591,7 +606,7 @@ object FormOptions: TFormOptions
         Top = 171
         Width = 190
         Height = 13
-        Caption = 'Copyright © 2002 by Ciaran McCreesh,'
+        Caption = 'Copyright '#169' 2002 by Ciaran McCreesh,'
       end
       object StaticTextMailAboutUMake: TStaticText
         Left = 181

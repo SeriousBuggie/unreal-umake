@@ -13,9 +13,12 @@ object FormLaunch: TFormLaunch
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   OnCreate = FormCreate
   OnShow = FormShow
+  DesignSize = (
+    393
+    209)
   PixelsPerInch = 96
   TextHeight = 13
   object LabelSource: TLabel

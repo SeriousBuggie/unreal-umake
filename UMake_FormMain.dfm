@@ -1,6 +1,6 @@
 object FormMain: TFormMain
-  Left = 396
-  Top = 293
+  Left = 482
+  Top = 201
   AutoScroll = False
   BorderIcons = [biSystemMenu]
   Caption = 'UMake'
@@ -16,7 +16,7 @@ object FormMain: TFormMain
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
   OnDestroy = FormDestroy
