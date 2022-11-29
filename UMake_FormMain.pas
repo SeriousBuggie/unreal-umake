@@ -633,7 +633,7 @@ begin
   PipedProcess.OnTerminate := PipedProcessTerminate;
   PipedProcess.Debug;
 
-  if Options.RegOptDetails.Value then
+  if Options.RegOptDetails.Value And ButtonDetails.Enabled then
     ButtonDetailsClick(ButtonDetails);
 
   StaticTextProgress.SetFocus;
