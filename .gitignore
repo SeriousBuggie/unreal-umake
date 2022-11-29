@@ -5,7 +5,9 @@
 # Borland Delphi identifier cache
 *.identcache
 # Borland Delphi backup files
-*.~dsk
+*.~*
+# Borland Delphi diagram portfolio files
+*.ddp
 
 # CVS default ignores begin
 tags
