@@ -625,6 +625,8 @@ begin
     [GetQuotedParam(IncludeTrailingBackslash(TextDirSystem) + 'ucc.exe'),
      GetQuotedParam(GetRelativePath(IncludeTrailingBackslash(Configuration.DirPackage) + 'make.ini', IncludeTrailingBackslash(TextDirSystem)))]);
 
+  ProgressBar.Position := 0;
+
   PipedProcess := TPipedProcess.Create;
   PipedProcess.Directory   := TextDirSystem;
   PipedProcess.Command     := TextCommand;
