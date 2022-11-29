@@ -62,6 +62,16 @@ file that caused the problem (if you configure UMake that way).
 Changes
 ===============================================================================
 
+Version 1.2.2 (2022-11-29) [unofficial fix by ut99.org]
+* Improve "Rebuild" button.
+* Auto say "Yes" to all compatibility questions, instead of stuck build.
+* Update version number
+* Sources at: https://github.com/SeriousBuggie/unreal-umake
+
+Version 1.2.1 (2020-07-25) [unofficial fix by ut99.org]
+* Fix multimonitor support.
+* Added "Rebuild" button. It glitchy but works in general.
+
 Version 1.2 (2004-06-01)
 * Added support for the CacheRecordPath setting required as of build 3204.
 * The make.ini file is only written to disk when it changes.
