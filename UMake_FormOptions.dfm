@@ -592,7 +592,7 @@ object FormOptions: TFormOptions
         Top = 16
         Width = 64
         Height = 13
-        Caption = 'Version 1.2.2'
+        Caption = 'Version 1.2.3'
       end
       object LabelAboutHashes: TLabel
         Left = 24
