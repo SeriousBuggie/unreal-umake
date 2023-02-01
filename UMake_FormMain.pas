@@ -674,14 +674,23 @@ var
   IndexCharSeparatorLF: Integer;
   IndexMatch: Integer;
   InfoWarning: TInfoError;
-  TextLine: string;
+  TextLine, TextDataA: string;
+  TextDataW: WideString;
 begin
   if not FlagClosing then
     ButtonAbort.Enabled := True;
 
   RichEditMessages.Lines.BeginUpdate;
 
-  AppendStr(TextBufferPipe, TextData);
+  TextDataA := Copy(TextData, 1, MaxInt);
+
+  if TextDataA[2] = #0 then begin
+  	SetLength(TextDataW, Length(TextData) div 2);
+  	Move(TextData[1], TextDataW[1], Length(TextData));
+  	TextDataA := String(TextDataW);
+  end;
+
+  AppendStr(TextBufferPipe, TextDataA);
   while Length(TextBufferPipe) > 0 do
   begin
     IndexCharSeparatorCR := Pos(#13, TextBufferPipe);
