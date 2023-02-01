@@ -1,6 +1,6 @@
 object FormLaunch: TFormLaunch
-  Left = 449
-  Top = 311
+  Left = 211
+  Top = 124
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'UMake'

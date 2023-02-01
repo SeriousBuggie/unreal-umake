@@ -1,13 +1,11 @@
 object FormMain: TFormMain
-  Left = 482
-  Top = 201
+  Left = 203
+  Top = 120
   AutoScroll = False
-  BorderIcons = [biSystemMenu]
   Caption = 'UMake'
-  ClientHeight = 334
-  ClientWidth = 307
+  ClientHeight = 450
+  ClientWidth = 700
   Color = clBtnFace
-  Constraints.MaxWidth = 315
   Constraints.MinHeight = 113
   Constraints.MinWidth = 315
   Font.Charset = ANSI_CHARSET
@@ -22,12 +20,12 @@ object FormMain: TFormMain
   OnDestroy = FormDestroy
   OnShow = FormShow
   DesignSize = (
-    307
-    334)
+    700
+    450)
   PixelsPerInch = 96
   TextHeight = 13
   object ButtonDetails: TButton
-    Left = 242
+    Left = 635
     Top = 53
     Width = 57
     Height = 25
@@ -39,7 +37,7 @@ object FormMain: TFormMain
     OnClick = ButtonDetailsClick
   end
   object ButtonAbort: TButton
-    Left = 181
+    Left = 574
     Top = 53
     Width = 57
     Height = 25
@@ -54,7 +52,7 @@ object FormMain: TFormMain
   object ProgressBar: TProgressBar
     Left = 8
     Top = 30
-    Width = 290
+    Width = 683
     Height = 12
     Anchors = [akLeft, akTop, akRight]
     Max = 1
@@ -73,8 +71,8 @@ object FormMain: TFormMain
   object PageControlDetails: TPageControl
     Left = 8
     Top = 96
-    Width = 291
-    Height = 230
+    Width = 684
+    Height = 346
     ActivePage = TabSheetError
     Anchors = [akLeft, akTop, akRight, akBottom]
     Enabled = False
@@ -83,8 +81,8 @@ object FormMain: TFormMain
       Caption = 'Error'
       OnResize = TabSheetErrorResize
       DesignSize = (
-        283
-        202)
+        676
+        318)
       object ImageError: TImage
         Left = 11
         Top = 11
@@ -112,8 +110,8 @@ object FormMain: TFormMain
         Caption = '(Location)'
       end
       object ButtonErrorEdit: TButton
-        Left = 218
-        Top = 170
+        Left = 611
+        Top = 286
         Width = 57
         Height = 25
         Anchors = [akRight, akBottom]
@@ -124,8 +122,8 @@ object FormMain: TFormMain
       object RichEditError: TRichEdit
         Left = 8
         Top = 56
-        Width = 267
-        Height = 105
+        Width = 660
+        Height = 221
         Anchors = [akLeft, akTop, akRight, akBottom]
         PlainText = True
         ScrollBars = ssBoth
@@ -138,8 +136,8 @@ object FormMain: TFormMain
       ImageIndex = 2
       OnResize = TabSheetWarningsResize
       DesignSize = (
-        283
-        202)
+        676
+        318)
       object ImageWarning: TImage
         Left = 11
         Top = 11
@@ -176,8 +174,8 @@ object FormMain: TFormMain
       object RichEditWarning: TRichEdit
         Left = 8
         Top = 56
-        Width = 267
-        Height = 105
+        Width = 660
+        Height = 221
         Anchors = [akLeft, akTop, akRight, akBottom]
         PlainText = True
         ScrollBars = ssBoth
@@ -185,8 +183,8 @@ object FormMain: TFormMain
         WantReturns = False
       end
       object ButtonWarningEdit: TButton
-        Left = 218
-        Top = 170
+        Left = 611
+        Top = 286
         Width = 57
         Height = 25
         Anchors = [akRight, akBottom]
@@ -197,7 +195,7 @@ object FormMain: TFormMain
       end
       object ButtonWarningNext: TButton
         Left = 68
-        Top = 170
+        Top = 286
         Width = 57
         Height = 25
         Anchors = [akLeft, akBottom]
@@ -208,7 +206,7 @@ object FormMain: TFormMain
       end
       object ButtonWarningPrev: TButton
         Left = 8
-        Top = 170
+        Top = 286
         Width = 57
         Height = 25
         Anchors = [akLeft, akBottom]
@@ -223,8 +221,8 @@ object FormMain: TFormMain
       object RichEditMessages: TRichEdit
         Left = 0
         Top = 0
-        Width = 283
-        Height = 202
+        Width = 676
+        Height = 318
         Align = alClient
         PlainText = True
         ScrollBars = ssBoth
@@ -236,7 +234,7 @@ object FormMain: TFormMain
   object StaticTextProgress: TStaticText
     Left = 8
     Top = 8
-    Width = 291
+    Width = 684
     Height = 17
     Anchors = [akLeft, akTop, akRight]
     AutoSize = False
@@ -250,10 +248,11 @@ object FormMain: TFormMain
     TabOrder = 0
   end
   object ButtonRebuild: TButton
-    Left = 120
+    Left = 513
     Top = 53
     Width = 57
     Height = 25
+    Anchors = [akTop, akRight]
     Caption = '&Rebuild'
     TabOrder = 5
     OnClick = FormShow

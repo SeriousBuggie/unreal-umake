@@ -959,7 +959,7 @@ begin
   Constraints.MaxWidth  := 0;
   Constraints.MaxHeight := 0;
 
-  ClientHeight := ClientHeight + 248;
+  ClientHeight := ClientHeight + 350;
   Constraints.MinHeight := Constraints.MinHeight + 200;
 
   PageControlDetails.Height := ClientHeight - PageControlDetails.Top - PageControlDetails.Left;

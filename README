@@ -64,6 +64,8 @@ Changes
 
 Version 1.2.3 (2023-02-01) [unofficial fix by ut99.org]
 * Support Unicode input (work with v469)
+* Improved form size.
+* Improve resize main compile window.
 
 Version 1.2.2 (2022-11-29) [unofficial fix by ut99.org]
 * Improve "Rebuild" button.
